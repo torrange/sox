@@ -28,14 +28,11 @@ Install for Ubuntu systems:
 
 		soxcnv 
 
+
+To specify the sample-rate of the output files, just run 'soxcnv' with the desired sample-rate as the first argument, like so:
+
+		soxconv 88200
+		
 	
-A new directory named "converted" will have been created in the current directory and
-all processed files stored there. 
-
-
-
-
-
-
-
-	
+A new directory named "converted" will have been created in the current working directory and
+all processed files are stored there. 
