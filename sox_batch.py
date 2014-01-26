@@ -68,6 +68,4 @@ if __name__ == "__main__":
 	s.inputFiles()
 	s.convertFiles()
 	exit("Converted %d files" % converted_count)
-
-
-
+	
