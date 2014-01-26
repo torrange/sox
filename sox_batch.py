@@ -2,7 +2,7 @@
 
 from subprocess import call
 from glob import glob
-from sys import exit
+from sys import exit, argv
 from os import mkdir, getcwd
 from datetime import date, datetime
 
@@ -11,7 +11,14 @@ class Sox(object):
 
 	def __init__(self, samplerate="44100"):
 		self.today = date.strftime(datetime.now(), "%Y%m%d")
-		self.samplerate = samplerate
+		
+		try:
+			self.samplerate = str(argv[1])
+
+		except IndexError:
+
+			self.samplerate = samplerate
+
 		self.filetypes = ("wav", "aif", "aiff") 
 		self.cwd = getcwd()
 
@@ -60,7 +67,6 @@ if __name__ == "__main__":
 	s.inputFiles()
 	s.convertFiles()
 	exit("Converted %d files" % converted_count)
-
 
 
 
