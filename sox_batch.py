@@ -9,7 +9,6 @@ from datetime import date, datetime
 
 class Sox(object):
 
-
 	def __init__(self, samplerate="44100"):
 
 		self.today = date.strftime(datetime.now(), "%Y%m%d")
