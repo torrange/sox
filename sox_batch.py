@@ -15,7 +15,6 @@ class Sox(object):
 			self.samplerate = str(argv[1])
 
 		except IndexError:
-
 			self.samplerate = samplerate
 
 		self.filetypes = ("wav", "aif", "aiff") 
