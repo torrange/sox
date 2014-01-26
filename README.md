@@ -1,7 +1,7 @@
-sox
+Sox
 ===
 
-Batch SRC for Sound eXchange (Sox)
+Batch SRC tool for Sound eXchange (Sox)
 
 Install for Ubuntu systems:
 
