@@ -22,19 +22,19 @@ class Sox(object):
 
 
 	def inputFiles(self):
-		self.input_files=[]
+		self.input_files = []
 
 		for filetype in self.filetypes:
-		    intemp=glob(self.cwd+"/*.%s" % (filetype))
+		    intemp = glob(self.cwd+"/*.%s" % (filetype))
 		   
-		    if intemp >=1:
+		    if intemp >= 1:
 			
 			for filename in intemp:
 			    self.input_files.append(filename)
 
 
 	def convertFiles(self):
-		if len(self.input_files) >=1:
+		if len(self.input_files) >= 1:
 		    
 		    global converted_count	
 		    converted_count = 0
